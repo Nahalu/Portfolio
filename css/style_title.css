@@ -1,0 +1,119 @@
+.start-screen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: nowrap column;
+          flex-flow: nowrap column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+    color:aliceblue;
+    font-size: 30px;
+    margin-top:-130px;
+}
+
+.loading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 24px 0;
+}
+
+.loading__element {
+  font: normal 1500 2rem/1 Roboto;
+  letter-spacing: .5em;
+}
+
+[class*="ela"] {
+  -webkit-animation: bouncing 10s infinite ease;
+          animation: bouncing 5s infinite ease;
+}
+
+.ela1 {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+
+.ela2 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.ela3 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+.ela4 {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+.ela5 {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.ela6 {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+.ela7 {
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+}
+
+.ela8 {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+.ela9 {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+.ela10 {
+  -webkit-animation-delay: 1.0s;
+          animation-delay: 0.9s;
+}
+.ela11 {
+  -webkit-animation-delay: 1.1s;
+          animation-delay: 0.9s;
+}
+.ela12 {
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 0.9s;
+}
+.ela13 {
+  -webkit-animation-delay: 1.3s;
+          animation-delay: 0.9s;
+}
+
+@-webkit-keyframes bouncing {
+  0%, 100% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(0, 0, 1);
+            transform: scale3d(0, 0, 1);
+  }
+}
+
+@keyframes bouncing {
+  0%, 100% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(0, 0, 1);
+            transform: scale3d(0, 0, 1);
+  }
+}

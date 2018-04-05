@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/style_page.css" type="text/css"> 
+    <link rel="stylesheet" href="css/style_effect.css" type="text/css"> 
+    <link rel="stylesheet" href="style_parallax.css" type="text/css">
+    <link rel="stylesheet" href="css/style_title.css" type="text/css">
+    <link rel="stylesheet" href="css/style_menu.css" type="text/css">
+    <link rel="stylesheet" href="css/style_global.css" type="text/css">
+    <link rel="stylesheet" href="css/style_skillbar.css" type="text/css">
+    <link rel="stylesheet" href="css/style_timeline.css" type="text/css">
+    <link rel="stylesheet" href="css/style_tool.css" type="text/css">
+    <link rel="stylesheet" href="css/style_btn.css" type="text/css">
+    
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+    </script>
+</head>
+
+<body>
+
+
+
+
+<body>
+<!--	<header>
+		<div id="cd-logo"><a href="#0"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-logo_3.svg" alt="Logo"></a></div>
+		<h1>Smart Fixed Navigation</h1>
+	</header> -->
+    
+     
+    
+<nav class="menu">
+  <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open"/>
+  <label class="menu-open-button" for="menu-open">
+    <span class="hamburger hamburger-1"></span>
+    <span class="hamburger hamburger-2"></span>
+    <span class="hamburger hamburger-3"></span>
+  </label>
+  
+  <a href="#" class="menu-item"> <i class="fa fa-bar-chart"></i> </a>
+  <a href="#" class="menu-item"> <i class="fa fa-plus"></i> </a>
+  <a href="#" class="menu-item"> <i class="fa fa-heart"></i> </a>
+  <a href="#" class="menu-item"> <i class="fa fa-envelope"></i> </a>
+  <a href="#" class="menu-item"> <i class="fa fa-cog"></i> </a>
+</nav>
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <defs>
+      <filter id="shadowed-goo">
+          <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+          <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+          <feGaussianBlur in="goo" stdDeviation="3" result="shadow" />
+          <feColorMatrix in="shadow" mode="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 -0.2" result="shadow" />
+          <feOffset in="shadow" dx="1" dy="1" result="shadow" />
+          <feBlend in2="shadow" in="goo" result="goo" />
+          <feBlend in2="goo" in="SourceGraphic" result="mix" />
+      </filter>
+      <filter id="goo">
+          <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+          <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+          <feBlend in2="goo" in="SourceGraphic" result="mix" />
+      </filter>
+    </defs>
+</svg>
+    
+    
+         
+<div id='hero'>
+    <canvas id="canvas" class='layer-bg layer' data-depth='0.10' data-type='parallax'></canvas>
+    <div class='layer-1 layer' data-depth='0.20' data-type='parallax'></div>
+    <div class='layer-2 layer' data-depth='0.50' data-type='parallax'></div>
+    <div class='layer-title' data-depth='1.50' data-type='parallax'>
+     <div class="start-screen">
+
+        <div class="loading">
+            <div class="loading__element ela1">◄</div>
+            <div class="loading__element ela1">P</div>
+            <div class="loading__element ela2">O</div>
+            <div class="loading__element ela3">R</div>
+            <div class="loading__element ela4">T</div>
+            <div class="loading__element ela5">F</div>
+            <div class="loading__element ela6">O</div>
+            <div class="loading__element ela7">L</div>
+            <div class="loading__element ela8">I</div>
+            <div class="loading__element ela9">O</div>
+            <div class="loading__element ela10">►</div>
+        </div>
+  
+        <div class="loading">
+            <div class="loading__element ela1">R</div>
+            <div class="loading__element ela2">O</div>
+            <div class="loading__element ela3">M</div>
+            <div class="loading__element ela4">A</div>
+            <div class="loading__element ela5">I</div>
+            <div class="loading__element ela6">N</div>
+            <div class="loading__element ela7">   /  </div>
+            <div class="loading__element ela8">M</div>
+            <div class="loading__element ela9">A</div>
+            <div class="loading__element ela10">R</div>
+            <div class="loading__element ela11">I</div>
+            <div class="loading__element ela12">N</div>
+            <div class="loading__element ela13">O</div>
+        </div>
+  
+       </div>
+    </div>
+</div>
+
+<div><img src="ressources/graphics/Parallax_forest/upcontent_svg.svg"></div>
+  <section class='containercontent'>
+        <div style="margin-left: auto; margin-right: auto; width:700px; padding-top: 10%; text-align: center;">
+        <h1>Quelques mots sur mon profil..</h1>
+            <p>Actuellement étudiant en informatique, je me passionne des technologies du digital et de l'électronique, me spécialisant dans le développement Fullstack.</p>
+            <p>Je porte à coeur la création, qu'importe le support, tant que l'histoire vaut la peine d'être raconté. La compréhension de l'outil étant au coeur même du processus de création, je suis convaincu que l'apprentissage et la curiosité devrait rester le combat de toute une vie.</p>
+            <p>C'est ainsi que je fais vivre mes passions à travers diverses réalisations tels que des jeux vidéos, des productions graphiques, de la composition audio, des applications, des systèmes embarqués. </p>
+        </div>
+  </section>
+<div class="wrap"><img style="margin-top:-10px;" src="ressources/graphics/Parallax_forest/downcontent_svg.svg"></div>
+    
+<section style="background-color: #2c3e51; margin-top:-70px">
+	<div id="cd-nav">
+		<a href="#0" class="cd-nav-trigger">Menu<span></span></a>
+
+		<nav id="cd-main-nav">
+			<ul style="z-index:999;">
+				<li><a href="#0">Homepage</a></li>
+				<li><a href="#0">Services</a></li>
+				<li><a href="#0">Portfolio</a></li>
+				<li><a href="#0">Pricing</a></li>
+				<li><a href="#0">Contact</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<main>
+		<ul style="padding:0;" id="cd-gallery-items" class="cd-container">
+			<li>
+                <a href="#">
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/thumb_1.jpg" alt="Preview image">
+                    </a>
+			</li>
+
+			<li>
+                <a href="#">
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/thumb_1.jpg" alt="Preview image">
+                </a>
+			</li>
+
+			<li>
+                <a href="#">
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/thumb_1.jpg" alt="Preview image">
+                    </a>
+			</li>
+
+			<li>
+                <a href="#">
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/thumb_1.jpg" alt="Preview image">
+                    </a>
+			</li>
+
+			<li>
+                <a href="#">
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/thumb_1.jpg" alt="Preview image">
+                    </a>
+			</li>
+
+			<li>
+                <a href="#">
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/thumb_1.jpg" alt="Preview image">
+                    </a>
+			</li>
+
+			<li>
+                <a href="#">
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/thumb_1.jpg" alt="Preview image">
+                    </a>
+			</li>
+
+			<li>
+                <a href="#">
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/thumb_1.jpg" alt="Preview image">
+                    </a>
+			</li>
+
+			<li>
+                <a href="#">
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/thumb_1.jpg" alt="Preview image">
+                    </a>
+			</li>
+
+			<li>
+                <a href="#">
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/thumb_1.jpg" alt="Preview image">
+                    </a>
+			</li>
+
+			<li>
+                <a href="#">
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/thumb_1.jpg" alt="Preview image">
+                    </a>
+			</li>
+
+			<li>
+                <a href="#">
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/thumb_1.jpg" alt="Preview image">
+                </a>
+			</li>
+		</ul> <!-- cd-gallery-items -->
+	</main>
+    </section>
+    
+    <div class="bgeffect"></div>
+
+	<section style="background-color:#2c3e51; z-index:10;">
+	<ul class="cd-containereffect" style="padding:0;">
+		<li class="cd-service cd-service-divider"></li>
+
+		<li class="cd-service cd-service-1">
+			<h2>Web Design</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis pariatur tenetur quod veritatis nulla aspernatur architecto! Fugit, reprehenderit amet deserunt molestiae ut libero facere quasi velit perferendis ullam quis necessitatibus!</p>
+		</li> 
+
+		<li class="cd-service cd-service-2">
+			<h2>Responsive Approach</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis pariatur tenetur quod veritatis nulla aspernatur architecto! Fugit, reprehenderit amet deserunt molestiae ut libero facere quasi velit perferendis ullam quis necessitatibus!</p>
+		</li> 
+
+		<li class="cd-service cd-service-3">
+			<h2>E-commerce</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis pariatur tenetur quod veritatis nulla aspernatur architecto! Fugit, reprehenderit amet deserunt molestiae ut libero facere quasi velit perferendis ullam quis necessitatibus!</p>
+		</li> 
+
+		<li class="cd-service cd-service-4">
+			<h2>CMS Integration</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis pariatur tenetur quod veritatis nulla aspernatur architecto! Fugit, reprehenderit amet deserunt molestiae ut libero facere quasi velit perferendis ullam quis necessitatibus!</p>
+		</li> 
+
+		<li class="cd-service cd-service-divider"></li>
+	</ul>  
+</section>
+    
+    <section style="background-color:#2c3e51; z-index:8;">
+<ul class="cd-containereffect" style="padding:0; background-color:#3e253c;">
+            <div>Compétences</div>
+  <div id="charts" class="wrapper_item">
+
+<div class="chrt  animation-element slide-left">
+ <div class="chart animate_all">
+   <div class="chart_color animate_all_slow html_chart">html/html5</div>
+</div>
+ <div class="chart animate_all">
+   <div class="chart_color animate_all_slow css_chart">css/css3</div>
+</div>
+ <div class="chart animate_all">
+   <div class="chart_color animate_all_slow js_chart">sass</div>
+</div>
+ <div class="chart animate_all">
+   <div class="chart_color animate_all_slow php_chart">javascript</div>
+</div>
+ <div class="chart animate_all">
+   <div class="chart_color animate_all_slow mysql_chart">php</div>
+</div>
+ <div class="chart animate_all">
+   <div class="chart_color animate_all_slow ps_chart">mysql</div>
+</div>
+ <div class="chart animate_all">
+   <div class="chart_color animate_all_slow corel_chart">C#</div>
+</div>
+ <div class="chart animate_all">
+   <div class="chart_color animate_all_slow max_chart">java</div>
+</div>
+      </div>
+ </div>
+      
+    <div>Librairie</div>
+            <div id="charts" class="wrapper_item">
+
+<div class="chrt  animation-element slide-left">
+ <div class="chart animate_all">
+   <div class="chart_color animate_all_slow html_chart">WebGl</div>
+</div>
+ <div class="chart animate_all">
+   <div class="chart_color animate_all_slow css_chart">JQuery</div>
+</div>
+ <div class="chart animate_all">
+   <div class="chart_color animate_all_slow js_chart">ScrollMagic</div>
+</div>
+            </div>
+ </div>
+    
+    <div>Framework</div>
+        <div id="charts" class="wrapper_item">
+
+<div class="chrt  animation-element slide-left">
+ <div class="chart animate_all">
+   <div class="chart_color animate_all_slow html_chart">materialize.js</div>
+</div>
+ <div class="chart animate_all">
+   <div class="chart_color animate_all_slow css_chart">Angular</div>
+</div>
+ <div class="chart animate_all">
+   <div class="chart_color animate_all_slow js_chart">CodeIgniter</div>
+</div>
+ <div class="chart animate_all">
+   <div class="chart_color animate_all_slow php_chart">laravel</div>
+</div>
+ <div class="chart animate_all">
+   <div class="chart_color animate_all_slow mysql_chart">CakePhp</div>
+</div>
+
+   </div>
+  </div>
+    
+<div class="buttons">
+  <button class="fill">Fill In</button>
+  <button class="pulse">Télécharger Portefeuille</button>
+  <button class="close">Close</button>
+  <button class="raise">Raise</button>
+  <button class="up">Fill Up</button>
+  <button class="slide">Slide</button>
+  <button class="offset">Offset</button>
+</div>
+    
+ </ul>
+        
+
+</section>
+	
+    
+
+       
+ 
+    
+    <section style="background-color:#2c3e51; z-index:10;">
+        <ul class="cd-containereffect" style="padding:0; background-color:#3e253c;">
+        <div>Outil de veille technologique</div>
+            <div style="text-align:center;">
+<div class="card card-1"></div>
+<div class="card card-1"></div>
+</div>
+<div  style="text-align:center;">
+<div class="card card-1"></div>
+<div class="card card-1"></div>
+</div>
+            <div  style="text-align:center;">
+<div class="card card-1"></div>
+<div class="card card-1"></div>
+</div>
+            
+            <iframe src="//www.pearltrees.com/nahalu?embed=2&d=20180402052" width="853" height="604" style="border:0px;" allowtransparency="true"></iframe><span style="display:block; padding-top:2px; color:#818181; font-size:13px;"><a href="http://www.pearltrees.com/nahalu" style=" color:#818181; font-size:13px;" target="_blank"></a></span>
+        </ul>    
+    </section>
+    
+    <section>
+        <ul class="cd-containereffect" style="padding:0; background-color:#3e253c;">
+        <div>Veille technologique</div>
+        </ul>
+    </section>
+    
+</body>
+
+
+
+
+
+<script>
+jQuery(document).ready(function($){
+	// browser window scroll (in pixels) after which the "menu" link is shown
+	var offset = 300;
+
+	var navigationContainer = $('#cd-nav'),
+		mainNavigation = navigationContainer.find('#cd-main-nav ul');
+
+	//hide or show the "menu" link
+	checkMenu();
+	$(window).scroll(function(){
+		checkMenu();
+	});
+
+	//open or close the menu clicking on the bottom "menu" link
+	$('.cd-nav-trigger').on('click', function(){
+		$(this).toggleClass('menu-is-open');
+		//we need to remove the transitionEnd event handler (we add it when scolling up with the menu open)
+		mainNavigation.off('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend').toggleClass('is-visible');
+
+	});
+
+	function checkMenu() {
+		if( $(window).scrollTop() > offset && !navigationContainer.hasClass('is-fixed')) {
+			navigationContainer.addClass('is-fixed').find('.cd-nav-trigger').one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(){
+				mainNavigation.addClass('has-transitions');
+			});
+		} else if ($(window).scrollTop() <= offset) {
+			//check if the menu is open when scrolling up
+			if( mainNavigation.hasClass('is-visible')  && !$('html').hasClass('no-csstransitions') ) {
+				//close the menu with animation
+				mainNavigation.addClass('is-hidden').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
+					//wait for the menu to be closed and do the rest
+					mainNavigation.removeClass('is-visible is-hidden has-transitions');
+					navigationContainer.removeClass('is-fixed');
+					$('.cd-nav-trigger').removeClass('menu-is-open');
+				});
+			//check if the menu is open when scrolling up - fallback if transitions are not supported
+			} else if( mainNavigation.hasClass('is-visible')  && $('html').hasClass('no-csstransitions') ) {
+					mainNavigation.removeClass('is-visible has-transitions');
+					navigationContainer.removeClass('is-fixed');
+					$('.cd-nav-trigger').removeClass('menu-is-open');
+			//scrolling up with menu closed
+			} else {
+				navigationContainer.removeClass('is-fixed');
+				mainNavigation.removeClass('has-transitions');
+			}
+		} 
+	}
+});
+</script>
+    
+    <script>
+    jQuery(document).ready(function($) {
+	//store service items
+	var fillingBlocks = $('.cd-service').not('.cd-service-divider');
+
+	//store service items top position into an array
+	var topValueFillingBlocks = [];
+	fillingBlocks.each(function(index){
+		var topValue = $(this).offset().top;
+		topValueFillingBlocks[topValueFillingBlocks.length] = topValue;
+	});
+
+	//add the .focus class to the first service item
+	fillingBlocks.eq(0).addClass('focus');
+
+	$(window).on('scroll', function(){
+		//check which service item is in the viewport and add the .focus class to it
+		updateOnFocusItem(fillingBlocks.slice(1));
+		//evaluate the $(window).scrollTop value and change the body::after and body::before background accordingly (using the new-color-n classes)
+		bodyBackground(topValueFillingBlocks);
+	});
+});
+
+function updateOnFocusItem(items) {
+	items.each(function(){
+		( $(this).offset().top - $(window).scrollTop() <= $(window).height()/2 ) ? $(this).addClass('focus') : $(this).removeClass('focus');
+	});
+}
+
+function bodyBackground(itemsTopValues) {
+	var topPosition = $(window).scrollTop() + $(window).height()/2,
+		servicesNumber = itemsTopValues.length;
+	$.each(itemsTopValues, function(key, value){
+		if ( (itemsTopValues[key] <= topPosition && itemsTopValues[key+1] > topPosition) || (itemsTopValues[key] <= topPosition && key+1 == servicesNumber ) ) {	
+			$('').removeClass('new-color-'+(key-1)+' new-color-'+(key+1)).addClass('new-color-'+key);
+		}
+	});
+}
+    
+    </script>
+    
+    <script type="text/javascript" src="js/canvas_bg.js"></script>
+    <script type="text/javascript" src="js/parallax.js"></script>
+    <script type="text/javascript" src="js/skillbar.js"></script>
+    
+    </html>

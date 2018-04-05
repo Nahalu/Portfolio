@@ -1,0 +1,41 @@
+#hero {
+  height: 800px; 
+  overflow: hidden;
+  position: relative;
+}
+
+.layer {
+  background-position: bottom center;
+  background-size: auto;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 800px;
+  position: fixed;
+  z-index: -1;
+}
+
+.layer-bg {
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  top: 0;
+  left: 0; 
+  width:100%;
+  background-repeat: no-repeat;
+  
+}
+
+.layer-1 {
+  background-image: url("ressources/graphics/Parallax_forest/ParallaxLandscape_layer3_svg.svg");
+  background-position: bottom left;
+  min-height: 1300px;
+    margin-top: -200px;
+}
+
+.layer-2 {
+  background-image: url("ressources/graphics/Parallax_forest/ParallaxLandscape_layer2_svg.svg");
+  background-position: bottom right;
+  min-height: 1700px;
+    margin-top: -300px;
+    margin-left: 160px;
+}
+
+
