@@ -79,6 +79,23 @@ p {
 	line-height: 36px;
 }
 
+.titlesec {
+    
+        text-align: center;
+    font-size: 60px;
+    color: beige;
+    padding-top: 90px;
+    padding-bottom: 40px;
+}
+
+.titlesousco {
+    
+        text-align: center;
+    font-size: 30px;
+    color: beige;
+
+}
+
 /* SKILLBAR */
 
 	body {
@@ -217,9 +234,7 @@ h1 {
   line-height: 0px;
   color: #A4A4A4;
   text-align: right;
-  margin-right: 200px;
   font-size: 50px;
-  word-spacing: -10px;
 }
 
 span {
